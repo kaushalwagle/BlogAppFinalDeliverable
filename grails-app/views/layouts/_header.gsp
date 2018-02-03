@@ -12,10 +12,10 @@
 
             <div class="collapse navbar-collapse" id="mainMenuItems">
                 <ul class="nav navbar-nav">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="blogpost">Blog</a></li>
-                    <li><a href="aboutus">About Us</a></li>
-                    <li><a href="contactus">Contact Us</a></li>
+                    <li><g:link controller="home" action="index">Home</g:link></li>
+                    <li><g:link controller="blog" action="index">Blog</g:link></li>
+                    <li><g:link controller="home" action="about">About Us</g:link></li>
+                    <li><g:link controller="home" action="contactus">Contact Us</g:link></li>
                 </ul>
             </div>
         </div>

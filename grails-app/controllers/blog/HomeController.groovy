@@ -6,15 +6,13 @@ class HomeController {
         render (view: "/home/index")
     }
 
-    def blogpost(){
-        render (view: "/blogpost/index")
+
+    def about(){
+        render(view:"/about/index")
     }
 
-    def aboutus(){
-        render (view: "/aboutus/index")
-    }
 
     def contactus(){
-        render (view: "/contactus/index")
+        render (view: "/contact/index")
     }
 }
