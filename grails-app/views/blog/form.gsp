@@ -54,7 +54,7 @@
                 %>
             </g:else>
 
-            <g:form controller="blog" action="${action}">
+            <g:form controller="blog" action="${action}" id="${blogSpot.id}">
                 <div class="form-group">
                     <label for="">Blog Title</label>
                     <input type="text" class="form-control" placeholder="Blog Title" name="title"
@@ -72,9 +72,9 @@
                     <textarea class="form-control" rows="5" placeholder="Blog Content Here"
                               name="content">${blogSpot.content}</textarea>
                 </div>
-                <g:if test="${specificBlog}">
-                    <g:hiddenField name="id" value="${specificBlog.id}"/>
-                </g:if>
+                %{--<g:if test="${specificBlog}">--}%
+                    %{--<g:hiddenField name="id" value="${specificBlog.id}"/>--}%
+                %{--</g:if>--}%
                 <button href="" type="submit" class="btn btn-primary">Submit</button>
             </g:form>
 

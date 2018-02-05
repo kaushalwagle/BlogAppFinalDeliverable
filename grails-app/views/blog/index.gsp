@@ -16,13 +16,15 @@
             <th class="alert-success">Blog Title</th>
             <th class="alert-success">Author</th>
             <th class="alert-success">Date Created</th>
+            <th class="alert-success"></th>
             <g:each in="${blogList}" var="blog">
 
                 <tr>
                     <td>${blog.id}</td>
-                    <td>${blog.title}</td>
+                    <td><g:link controller="blog" action="detail" id="${blog.id}">${blog.title}</g:link></td>
                     <td>${blog.authorName}</td>
                     <td>${blog.dateCreated}</td>
+                    <td><g:link controller="blog" action="edit" id="${blog.id}" class="btn btn-default">Edit</g:link></td>
                 </tr>
 
             </g:each>
@@ -38,6 +40,8 @@
 
             <p>${specificBlog.content}</p>
         </div>
+
+        <button type="button" action="edit"
     </div>
 
 </g:elseif>
